@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 0.9rem;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    color: #ff5722;
+    border-bottom: 2px solid #ff5722;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.video-container, .image-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem auto;
+    position: relative;
+}
+
+video, img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.download-btn {
+    display: block;
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #e64a19;
+}
+
+p {
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+@media (max-width: 768px) {
+    header, footer {
+        padding: 0.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
